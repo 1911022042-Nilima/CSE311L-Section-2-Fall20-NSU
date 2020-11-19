@@ -1,0 +1,40 @@
+Table _1_code:
+INSERT INTO departments VALUES (20,'Marketing',201,1800)
+INSERT INTO departments VALUES (60,'IT', 103, 1400)
+INSERT INTO departments VALUES (80,'Sales',149,2500),(90,'Executive',100,1700),(110,'Accounting',205,1700),(190,'Contracting',NULL,1700)
+
+Table_2
+CREATE TABLE Employees (
+        Employee_id int(6) PRIMARY KEY ,
+        First_Name VARCHAR(20) NULL,
+         Last_Name VARCHAR(25) NOT NULL,
+         Email VARCHAR(25) NOT NULL,
+         Phone_Number VARCHAR(15) NULL,
+         Hier_Date date NOT NULL,
+         Job_Id VARCHAR(10) NOT NULL,
+         Salary int(8) NULL,
+         commission_pct int(2) NULL,
+         Manager_id int(6) NULL,
+         Department_id int(4) NULL);
+
+
+INSERT INTO employees VALUES (100, 'Steven','King','SKING','515.123.4567','17-JUN-87','AD_PRES',24000, NULL,NULL,90)
+
+
+
+
+table 3
+CREATE TABLE Locations (
+    Location_id int(4) PRIMARY KEY ,
+    Street_Address VARCHAR(40) NULL,
+    Postal_Code VARCHAR(12) NULL,
+    City VARCHAR(30) NOT NULL,
+    State_Province VARCHAR(25) NULL,
+    Country_ID VARCHAR(2) NULL);
+
+
+INSERT INTO employees VALUES (1400, '2014 Jabberwocky Rd','26192','Sounthlake','Texas','US'),
+(1500, '2011 Interiors Blvd','99236','Sounth San Francisco','California','US'),
+(1700, '2004 Charade Rd','98199','Seattle','Washington','US'),
+(1800, '460 Bloor St. W.','ON M5S 1X8','Toronto','Ontario','CA'),
+(2500, 'Magdalen Center - The Oxford Sc. Park','OX9 9ZB','Oxford','Oxford','UK');
