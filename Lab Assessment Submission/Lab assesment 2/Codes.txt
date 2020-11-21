@@ -1,8 +1,6 @@
 SELECT e.Last_Name ,e.Department_id AS "department Number", d.Department_Name FROM employees e, departments d WHERE e.Department_id=d.Department_id
 
 
-SELECT Last_Name,Job_Id,Hier_Date 
-FROM employees
-WHERE Hier_Date BETWEEN ('1998-02-20' AND '1998-05-01');
+SELECT Last_Name,Job_Id,Hier_Date FROM employees WHERE Hier_Date BETWEEN '1998-02-20' AND '1998-05-01' ORDER BY Hier_Date DESC
 
 SELECT e.Last_Name , e.Salary AS "WEEKLY SALARY", d.Department_Name FROM employees e,departments d WHERE e.Department_id=d.Department_id
