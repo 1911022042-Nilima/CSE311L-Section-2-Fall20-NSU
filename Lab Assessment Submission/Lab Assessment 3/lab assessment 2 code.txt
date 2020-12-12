@@ -1,0 +1,4 @@
+SELECT last_name, Salary FROM employees WHERE Manager_id=(SELECT Employee_id FROM employees WHERE Last_Name='King')
+
+SELECT Employee_id,Last_Name, Salary FROM employees WHERE Salary>(SELECT AVG(Salary) FROM employees) AND 
+ Last_Name LIKE '%u%';
