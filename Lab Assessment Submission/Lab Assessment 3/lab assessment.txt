@@ -1,0 +1,4 @@
+SELECT last_name, Hier_Date FROM employees WHERE Department_id=(SELECT Department_id FROM employees WHERE Last_Name ='Zlotkey') ;
+
+
+SELECT Employee_id,last_name,Salary from employees WHERE Salary >(SELECT AVG(Salary) FROM employees) ORDER BY Salary DESC
